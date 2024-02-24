@@ -1,22 +1,23 @@
+<!DOCTYPE html>
 <html>
 <head>
 <style>
 body {
     font-family: Arial, sans-serif;
     display: flex; /* Aligns the menu items in a row */
+    justify-content: space-between; /* Adds space between the menu items */
 }
 
 .menu-item {
     border: 1px solid black; /* Adds border around the div */
     padding: 10px; /* Adds space inside the box */
-    margin-right: 20px; /* Adds space between boxes */
     width: calc(100% / 3 - 20px); /* Distributes the width evenly among the boxes */
 }
 
 .menu-item h3 {
-    text-align: right; /* Aligns the heading to the right */
+    text-align: center; /* Aligns the heading to the center */
     background-color: maroon;
-  width:80px;/* Adds a background color to the heading */
+    width:100%; /* Makes the heading full width */
     padding: 5px; /* Adds some space around the heading */
 }
 
@@ -42,17 +43,18 @@ body {
 </style>
 </head>
 <body>
-<div class="menu-item">
-    <h3>Chicken</h3>
-    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<div class="menu-item">
-    <h3>Beef</h3>
-    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<div class="menu-item">
-    <h3>Sushi</h3>
-    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+    <h1 style="text-align:center">Our Menu</h1>
+    <div class="menu-item">
+        <h3>Chicken</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis nisi malesuada tincidunt. Morbi vitae nisl id eros aliquet tincidunt. Fusce quis lacus ut leo lacinia sagittis. Donec quis arcu sed leo vulputate ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
+    <div class="menu-item">
+        <h3>Beef</h3>
+        <p>Nulla facilisi. Phasellus auctor, sapien quis consequat ultrices, augue eros tincidunt massa, at tincidunt lorem nisl quis eros. Sed id nisl quis nunc sagittis sagittis. Sed quis leo sit amet leo tincidunt sagittis. Sed quis nisl quis nunc sagittis sagittis. Sed quis leo sit amet leo tincidunt sagittis.</p>
+    </div>
+    <div class="menu-item">
+        <h3>Sushi</h3>
+        <p>Curabitur quis nisl quis nunc sagittis sagittis. Sed quis leo sit amet leo tincidunt sagittis. Sed quis nisl quis nunc sagittis sagittis. Sed quis leo sit amet leo tincidunt sagittis. Sed quis nisl quis nunc sagittis sagittis. Sed quis leo sit am
+    </div>
 </body>
 </html>
