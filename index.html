@@ -1,60 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    display: flex; /* Aligns the menu items in a row */
-    justify-content: space-between; /* Adds space between the menu items */
-}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Rseponsive Layout</title>
 
-.menu-item {
-    border: 1px solid black; /* Adds border around the div */
-    padding: 10px; /* Adds space inside the box */
-    width: calc(100% / 3 - 20px); /* Distributes the width evenly among the boxes */
-}
-
-.menu-item h3 {
-    text-align: center; /* Aligns the heading to the center */
-    background-color: maroon;
-    width:100%; /* Makes the heading full width */
-    padding: 5px; /* Adds some space around the heading */
-}
-
-.menu-item p {
-    text-align: justify;
-}
-
-/* Adds different background colors to the menu items */
-.menu-item:nth-child(1) { background-color: #ffdddd; } /* Red */
-.menu-item:nth-child(2) { background-color: #ddffdd; } /* Green */
-.menu-item:nth-child(3) { background-color: #ddddff; } /* Blue */
-
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-        display: block; /* Stacks the menu items vertically on small screens */
-    }
-
-    .menu-item {
-        width: 100%; /* Makes the boxes full width on small screens */
-    }
-}
-</style>
 </head>
+<style>             h1{
+                    text-align: center;
+        margin-bottom: 80px;
+        font-family: cursive;
+        font-style: italic ;
+
+            }
+            *{
+                        box-sizing: border-box;
+
+    }
+    .section{
+      float: left;
+      margin: 10px;
+      width: calc(33.3333% - 20px);
+      position: relative;
+      border: 1px solid black;
+      background-color: grey;
+
+    }
+
+
+
+      .section-title{
+              position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding-right: 25px;
+        padding-left: 25px;
+        border: 1px solid black;
+        font-style: italic;
+        font-size: 115%;
+        font-family: cursive;
+
+    }
+      .dummy-text {
+              font-size: 16px;
+        margin: 10px;
+        padding: 10px;
+        margin-top: 15px;
+      }
+
+     @media (min-width: 768px) and (max-width: 991px){
+       .section {
+          width: calc(50% - 20px);
+          float: left;
+       }
+       .section:nth-child(3){
+          width: calc(100% - 20px);
+       }
+     }
+     @media (max-width: 767px){
+       .section{
+        width: calc(100% - 20px);
+        clear: both;
+       }
+     } </style>
 <body>
-    <h1 style="text-align:center">Our Menu</h1>
-    <div class="menu-item">
-        <h3>Chicken</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis nisi malesuada tincidunt. Morbi vitae nisl id eros aliquet tincidunt. Fusce quis lacus ut leo lacinia sagittis. Donec quis arcu sed leo vulputate ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    </div>
-    <div class="menu-item">
-        <h3>Beef</h3>
-        <p>Nulla facilisi. Phasellus auctor, sapien quis consequat ultrices, augue eros tincidunt massa, at tincidunt lorem nisl quis eros. Sed id nisl quis nunc sagittis sagittis. Sed quis leo sit amet leo tincidunt sagittis. Sed quis nisl quis nunc sagittis sagittis. Sed quis leo sit amet leo tincidunt sagittis.</p>
-    </div>
-    <div class="menu-item">
-        <h3>Sushi</h3>
-        <p>Curabitur quis nisl quis nunc sagittis sagittis. Sed quis leo sit amet leo tincidunt sagittis. Sed quis nisl quis nunc sagittis sagittis. Sed quis leo sit amet leo tincidunt sagittis. Sed quis nisl quis nunc sagittis sagittis. Sed quis leo sit am
-    </div>
+<h1> Our Menu</h1>
+  <div class="container">
+    <section class="section">
+            <h2 class="section-title" style="background-color: pink;">Chicken</h2>
+      <p class="dummy-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat.</p>
+    </section>
+   <section class="section">
+        <h2 class="section-title" style="background-color: brown; color: white;">Beef</h2>
+        <p class="dummy-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat.</p>
+      </section>
+<section class="section">
+  <h2 class="section-title" style="background-color: burlywood;">Sushi</h2>
+<p class="dummy-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat.</p>
+</section>
+</div>
+
 </body>
 </html>
